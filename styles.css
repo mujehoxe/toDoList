@@ -1,0 +1,106 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    background: url(imgs/card-bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.card {
+  position: relative;
+  width: 60%;
+  height: 70%;
+  z-index: 99;  
+  background-color: white;
+  box-shadow: 0 30pt 30pt rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: rgb(16, 16, 16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+
+.head {
+  text-align: center;
+  background-color: wheat;
+  width: 100%;
+  box-shadow: 0 5pt 5pt rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+
+.body {
+  background-color: red;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 5pt 5pt rgba(0, 0, 0, 0.2);
+  background-color: antiquewhite;
+  border-radius: 2px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-left: 30px;
+  text-transform: capitalize;
+}
+
+.operations {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-right: 30px;
+}
+
+
+.check {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.check.checked {
+  background-color: green;
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+.remove {
+  color: red;
+  cursor: pointer;
+}
+
+
