@@ -2,12 +2,13 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  overflow-y: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-    background: url(imgs/card-bg.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
+  background: url(imgs/card-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .overlay {
@@ -23,8 +24,8 @@ body {
 .card {
   position: relative;
   width: 60%;
-  height: 70%;
-  z-index: 99;  
+  z-index: 99;
+  padding-bottom: 2rem;
   background-color: white;
   box-shadow: 0 30pt 30pt rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -33,9 +34,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  
 }
-
 
 .head {
   text-align: center;
@@ -45,9 +44,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
-
-
-
 
 .body {
   background-color: red;
@@ -72,12 +68,11 @@ body {
 
 .operations {
   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding-right: 30px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-right: 30px;
 }
-
 
 .check {
   width: 20px;
@@ -86,7 +81,6 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-
 
 .check.checked {
   background-color: green;
@@ -97,10 +91,7 @@ body {
   color: white;
 }
 
-
 .remove {
   color: red;
   cursor: pointer;
 }
-
-
